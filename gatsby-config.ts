@@ -1,16 +1,16 @@
-import type { GatsbyConfig } from "gatsby";
-
-require("dotenv").config({
+import type { GatsbyConfig } from 'gatsby';
+ 
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
-
+ 
 const strapiConfig = {
   apiURL: process.env.STRAPI_API_URL,
   accessToken: process.env.STRAPI_TOKEN,
-  collectionTypes: ["job"],
+  collectionTypes: ['job'],
   singleTypes: [],
 };
-
+ 
 const config: GatsbyConfig = {
   plugins: [
     `gatsby-plugin-image`,
@@ -30,5 +30,5 @@ const config: GatsbyConfig = {
     },
   ],
 };
-
+ 
 export default config;
