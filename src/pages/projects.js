@@ -5,6 +5,7 @@ import Seo from "../components/Seo";
 const ProjectsPage = ({data:{allStrapiProject:{nodes:projects}}}) => {
   return (
     <>
+      <Seo title="Projects" />
       <main>
         <section className="projects-page">
           <Projects title="all projects" projects={projects} />

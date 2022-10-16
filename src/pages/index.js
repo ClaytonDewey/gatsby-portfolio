@@ -9,6 +9,7 @@ const IndexPage = ({data}) => {
   const { allStrapiProject: { nodes:projects }} = data;
   return (
     <>
+      <Seo title="Home" />
       <main>
         <Hero />
         <Services />

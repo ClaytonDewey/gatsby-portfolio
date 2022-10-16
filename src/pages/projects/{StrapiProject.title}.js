@@ -1,10 +1,14 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Seo from '../../components/Seo'
-const ProjectTemplate = ({pageContext:{title}, data}) => {
+import React from "react"
+import { graphql } from "gatsby"
+import Seo from "../../components/Seo"
+const ProjectTemplate = ({ pageContext: { title }, data }) => {
   return (
     <>
-    {/* Seo will go here... */}
+      <Seo
+        title={data.strapiProject.title.toUpperCase()}
+        description={data.strapiProject.description}
+        image={data.strapiProject.image.localFile.publicUrl}
+      />
       <main className="project-template-page">
         <h2>{title}</h2>
         <p>{data.strapiProject.description}</p>
@@ -26,6 +30,5 @@ export const query = graphql`
     }
   }
 `
-
 
 export default ProjectTemplate
