@@ -12,6 +12,14 @@ const strapiConfig = {
 };
  
 const config: GatsbyConfig = {
+  siteMetadata: {
+    title: `WebDev Portfolio`,
+    description: `Awesome webDev Portfolio build with Gatsby and Strapi`,
+    titleTemplate: `%s | WebDev Portfolio`,
+    url: `https://dm-gatsby-portfolio.netlify.app`,
+    twitterUserName: `@ClaytonDewey`,
+    image: `/mainImg.png`,
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
