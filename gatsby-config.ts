@@ -16,8 +16,8 @@ const config: GatsbyConfig = {
     title: `WebDev Portfolio`,
     description: `Awesome webDev Portfolio build with Gatsby and Strapi`,
     titleTemplate: `%s | WebDev Portfolio`,
-    url: `https://dm-gatsby-portfolio.netlify.app`,
-    twitterUserName: `@ClaytonDewey`,
+    siteUrl: `https://dm-gatsby-portfolio.netlify.app`,
+    twitterUsername: `@ClaytonDewey`,
     image: `/mainImg.png`,
   },
   plugins: [
